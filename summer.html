@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiii, Welcome to My World 🥳！！！</title>
+    <style>
+        /* import font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Jockey+One&display=swap');
+        /* common style  */
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+        a {
+            text-decoration: none
+        }
+
+        body {
+            font-family: 'Jockey One', sans-serif;
+        }
+        header {
+            width: 100%;
+            height: 169px;
+            background: #48B8D0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .layout {
+            width: 1512px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            height: 104px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 104px;
+            color: #9F142D;
+            text-align: center;
+            font-family: 'Inter';
+        }
+
+        ul.menu {
+            height: 65px;
+            display: flex;
+            background-color: #E8BABA;
+            font-family: 'Inter';
+        }
+
+        ul.menu > li > a {
+            height: 65px;
+            width: 504px;
+            font-weight: 400;
+            font-size: 60px;
+            color: #EED6D6;
+            text-align: center;
+            line-height: 65px;
+            display: block;
+        }
+
+        ul.menu > li > a:hover,
+        ul.menu > li > a.active {
+            color: #36EA5D;
+            background: #4744EE;
+        }
+        /* page style */
+        .content-summer {
+            margin-top: 169px;
+            background: #F5A2A2;
+        }
+
+        .sub-menu {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 150px;
+            line-height: 210px;
+            letter-spacing: 0.03em;
+            color: #F8E0E0;
+            padding: 40px 140px;
+        }
+
+        .sub-menu > li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .summer-button {
+            width: 500px;
+            height: 154px;
+            border-radius: 90px;
+            color: #062C40;
+            border: 10px solid #0077B6;
+            font-size: 100px;
+            line-height: 134px;
+            letter-spacing: 0.03em;
+            text-align: center;
+
+        }
+
+        a.summer-button:hover {
+            background-color: firebrick;
+            color: white;
+        }
+
+        .summer-button-yellow {
+            background: #F6BD60;
+        }
+
+        .summer-button-cadetblue {
+            background: #84A59D;
+        }
+
+        .summer-button-pink {
+            background: #F5CAC3;
+        }
+
+        #Intern {
+            padding: 300px 110px;
+        }
+
+        #Intern > .photos {
+            margin-top: 130px;
+            margin-bottom: 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #Intern > .photos > img {
+            width: 602px;
+            height: 802px;
+        }
+
+        #Intern > .text {
+            width: 1106px;
+            height: 573px;
+            background: #928F8F;
+            font-size: 40px;
+            line-height: 56px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        #Concerts {
+        }
+
+        #Concerts > .photos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 115px;
+        }
+
+        #Concerts > .text {
+            background: #700707;
+            font-size: 40px;
+            line-height: 56px;
+            letter-spacing: 0.03em;
+            color: white;
+            margin: 43px 0;
+            padding: 34px 260px;
+        }
+
+        #Concerts > .text2 {
+            padding: 90px 114px;
+        }
+
+        #Concerts > .photos-more {
+            position: relative;
+            height: 1000px;
+        }
+
+        #Concerts > .photos-more > img:first-child {
+            position: absolute;
+            width: 539px;
+            height: 755px;
+            left: 345px;
+            top: -100px;
+            transform: rotate(-16.62deg);
+        }
+
+        #Concerts > .photos-more > img:last-child {
+            position: absolute;
+            width: 567px;
+            height: 755px;
+            right: 56px;
+            top: -210px;
+            transform: rotate(15.13deg);
+        }
+
+        #Travel > .title {
+            display: flex;
+            justify-content: right;
+        }
+
+        #Travel .text {
+            display: block;
+            width: 100%;
+            padding: 90px 110px;
+            font-size: 40px;
+        }
+
+        #Travel > .photos {
+            position: relative;
+            height: 2400px;
+        }
+
+        #Travel > .photos > img:nth-child(1) {
+            position: absolute;
+            width: 588px;
+            height: 784px;
+            left: 138px;
+            top: 250px;
+        }
+
+        #Travel > .photos > img:nth-child(2) {
+            position: absolute;
+            width: 566px;
+            height: 1007px;
+            left: 808px;
+            top: 90px;
+        }
+
+        #Travel > .photos > img:nth-child(3) {
+            position: absolute;
+            width: 1207px;
+            height: 917px;
+            left: 155px;
+            top: 1171px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="layout">
+        <h1>Hiii, Welcome to My World 🥳！！！</h1>
+        <ul class="menu">
+            <li><a href="index.html">Me</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a class="active" href="summer.html">This Summer</a></li>
+        </ul>
+    </div>
+</header>
+<div class="content-summer">
+    <ul class="layout sub-menu">
+        <li>I Had a<a class="summer-button summer-button-yellow" href="#Intern">Intern</a></li>
+        <li>Wonderful<a class="summer-button summer-button-cadetblue" href="#Concerts">Concerts</a></li>
+        <li>Summer!<a class="summer-button summer-button-pink" href="#Travel">Travel</a></li>
+    </ul>
+    <div id="Intern" class="layout">
+        <div class="summer-button summer-button-yellow">Intern</div>
+        <div class="photos">
+            <img src="images/summer1.png" alt="">
+            <img src="images/summer2.png" alt="">
+        </div>
+        <div class="text">
+            This summer, I spent my vacation doing an internship at Xiaomi, which was my first work experience in my
+            life. Here, I met many lovely people. My team members were exceptionally friendly, and the leaders were even
+            more helpful and professional in their advice. Not only do we work closely together at work, but we also
+            often get together to order takeaways. Their hospitality to me is deeply appreciated and has inspired me to
+            look forward to more in my working life.
+        </div>
+    </div>
+    <div id="Concerts" class="layout">
+        <div class="summer-button summer-button-cadetblue" style="margin: 0 auto;">Concerts</div>
+        <div class="photos">
+            <img src="images/summer3.png" width="583px" height="692px" alt="">
+            <img src="images/summer4.png" width="555px" height="788px" alt="">
+        </div>
+        <div class="text">
+            There was no more memorable moment this summer than meeting my longtime favorite teenager. That concert was
+            significant because it was the last show that Yi was involved in as a group. I felt very lucky to be there
+            to cheer him on. I am confident that there will be many more opportunities to meet him in the future.
+        </div>
+        <div class="photos">
+            <img src="images/summer5.png" width="545px" height="872px" alt="">
+            <img src="images/summer6.png" width="555px" height="872px" alt="">
+        </div>
+        <div class="text text2">
+            And some other great concerts...
+        </div>
+        <div class="photos-more">
+            <img src="images/summer7.JPG" alt="">
+            <img src="images/summer8.JPG" alt="">
+        </div>
+    </div>
+    <div id="Travel" class="layout">
+        <div class="title">
+            <div class="summer-button summer-button-pink">Travel</div>
+        </div>
+        <div class="text">
+            Traveling is of course an essential element of summer!<br>
+            I went to some places in China this summer.
+        </div>
+        <div class="photos">
+            <img src="images/summer9.png" alt="">
+            <img src="images/summer10.png" alt="">
+            <img src="images/summer11.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

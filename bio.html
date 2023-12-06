@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiii, Welcome to My World 🥳！！！</title>
+    <style>
+        /* import font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Jockey+One&display=swap');
+        /* common style  */
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        body {
+            font-family: 'Jockey One', sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 169px;
+            background: #48B8D0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .layout {
+            width: 1512px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            height: 104px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 104px;
+            color: #9F142D;
+            text-align: center;
+            font-family: 'Inter';
+        }
+
+        ul.menu {
+            height: 65px;
+            display: flex;
+            background-color: #E8BABA;
+            font-family: 'Inter';
+        }
+
+        ul.menu > li > a {
+            height: 65px;
+            width: 504px;
+            font-weight: 400;
+            font-size: 60px;
+            color: #EED6D6;
+            text-align: center;
+            line-height: 65px;
+            display: block;
+        }
+
+        ul.menu > li > a:hover,
+        ul.menu > li > a.active {
+            color: #36EA5D;
+            background: #4744EE;
+        }
+
+        /* page style*/
+        .content-bio {
+            background: #F5A2A2;
+            margin-top: 169px;
+        }
+
+        .bio-hello {
+            display: flex;
+            height: 910px;
+            font-weight: 400;
+        }
+
+        .bio-hello > .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .bio-hello > .text > h2 {
+            font-size: 350px;
+            line-height: 380px;
+            letter-spacing: 0.03em;
+            color: #FEFEFE;
+        }
+
+        .bio-text {
+            font-size: 40px;
+            line-height: 56px;
+            letter-spacing: 0.03em;
+            color: #000000;
+            padding: 40px 80px;
+        }
+
+        .bio-hello > img {
+            margin: 41px 46px 0 0;
+            width: 571px;
+            height: 761px;
+        }
+
+        .mail-me {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mail-me > a {
+            width: 592px;
+            height: 98px;
+            background: #FB9D59;
+            border: 5px solid #1219C2;
+            border-radius: 80px;
+            font-size: 48px;
+            line-height: 88px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+        }
+
+        .friends > .title,
+        .idol > .title,
+        .hobbies > .title {
+            width: 100%;
+            height: 220px;
+            font-size: 150px;
+            line-height: 210px;
+            letter-spacing: 0.03em;
+            color: #F8E0E0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .friends > .container,
+        .idol > .container {
+            display: flex;
+            height: auto;
+        }
+
+        .friends > .container > .photo > img {
+            width: 494px;
+            height: 658px;
+        }
+
+        .idol > .container > .photo > img {
+            width: 498px;
+            height: 746px;
+            margin: 40px 0 0 80px;
+        }
+
+        .bio-sub-title {
+            width: 100%;
+            height: 280px;
+            font-size: 64px;
+            line-height: 380px;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: #000000;
+        }
+
+        .photography > .photo {
+            width: 100%;
+            background-color: #928F8F;
+            text-align: center;
+        }
+
+        .photography > .photo > img {
+            width: 802px;
+            height: 1069px;
+        }
+
+        .skiing,
+        .arts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skiing > img {
+            width: 598px;
+            height: 1074px;
+            margin: 0 40px;
+        }
+
+        .arts > .left,
+        .arts > .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 90px;
+        }
+
+        .arts > .right {
+            padding-left: 0;
+        }
+
+        .arts > .left > img,
+        .arts > .right > img {
+            width: 605px;
+            height: 1076px;
+            margin: 25px 0;
+        }
+
+        .arts > .right > .bio-text {
+            padding: 50px 10px;
+        }
+        .alcohol {
+            padding-bottom: 80px;
+        }
+        .alcohol > .line1,
+        .alcohol > .line2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .alcohol > .line1 > .bio-text {
+            width: 680px;
+            padding: 40px;
+        }
+
+        .alcohol > .line1 > img {
+            width: 624px;
+            height: 1110px;
+        }
+
+        .alcohol > .line2 > img {
+            width: 680px;
+            height: 907px;
+            margin: 25px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 40px;
+            border: 10px solid #0077B6;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: rgba(0, 119, 182, 0.7);
+            font-weight: 700;
+            color: white;
+        }
+
+        td {
+            padding: 10px 40px;
+            border: 5px solid #0077B6;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="layout">
+        <h1>Hiii, Welcome to My World 🥳！！！</h1>
+        <ul class="menu">
+            <li><a href="index.html">Me</a></li>
+            <li><a class="active" href="bio.html">Bio</a></li>
+            <li><a href="summer.html">This Summer</a></li>
+        </ul>
+    </div>
+</header>
+<div class="content-bio">
+    <div class="layout bio-hello">
+        <div class="text">
+            <h2>hello</h2>
+            <p class="bio-text">
+                It’s me, Qirui Jin, you can also call me Cecilia.<br>
+                Welcome to my world !!!<br>
+                I am a student enrolled in the GBDA program
+                at the University of Waterloo.<br>
+                I am enjoying my life right now.<br>
+                Sharing pieces of my life with you now!
+            </p>
+        </div>
+        <img src="images/bio1.png" alt="">
+    </div>
+    <div class="layout mail-me">
+        <a href="mailto:q25jin@uwaterloo.ca">Mail me</a>
+    </div>
+    <div class="layout friends">
+        <div class="title">Friends</div>
+        <div class="container">
+            <div class="bio-text">
+                This is my best friend and we have been together since middle school. We laugh together, shed tears
+                together. Almost every day we chat and share bits and pieces of our lives.
+            </div>
+            <div class="photo">
+                <img src="images/bio2.png" alt="">
+            </div>
+            <div class="bio-text">
+                We have accumulated many precious memories, and our tacit understanding of each other is unparalleled.
+                We both cherish this friendship and see each other as important partners for the future.
+            </div>
+        </div>
+    </div>
+    <div class="layout idol">
+        <div class="title">Idol</div>
+        <div class="container">
+            <div class="photo">
+                <img src="images/bio3.png" alt="易洋千玺">
+            </div>
+            <div class="bio-text">
+                This is Jackson Yee, 易烊千玺, a boy I've liked for many years, he is an actor and a singer. There are many
+                qualities in him that I should learn from, and he has always been my role model.
+                <br>
+                <br>
+                He's also talented in design, and last year he wrote his own code to create a website unique to himself
+                and his fans. He'll be sharing life here. This website also won an award for interaction design.
+                <br>
+                <br>
+                The website is here👉<a href="https://www.xiqianyangyi.com/" target="_blank">Click me</a>, feel free to
+                browse.
+            </div>
+        </div>
+    </div>
+    <div class="layout hobbies">
+        <div class="title">Hobbies</div>
+        <div class="container">
+            <div class="bio-sub-title">Photography</div>
+            <div class="photography">
+                <div class="photo">
+                    <img src="images/bio4.png" alt="">
+                </div>
+                <div class="bio-text">
+                    Grabbing a camera and documenting life is my way of expressing my inner world and capturing
+                    beautiful moments. I enjoy documenting life and emotions with my camera.
+                </div>
+            </div>
+            <div class="bio-sub-title">Skiing</div>
+            <div class="skiing">
+                <img src="images/bio5.png" alt="">
+                <img src="images/bio6.png" alt="">
+            </div>
+            <div class="bio-sub-title">Arts</div>
+            <div class="arts">
+                <div class="left">
+                    <img src="images/bio7.png" alt="">
+                    <img src="images/bio8.png" alt="">
+                </div>
+                <div class="right">
+                    <img src="images/bio9.png" alt="">
+                    <div class="bio-text">
+                        Henri Matisse is one of my favorite artist, and this is a group photo from when I went to see
+                        his work at MOMA this year.
+                    </div>
+                </div>
+            </div>
+            <div class="bio-sub-title">Alcohol</div>
+            <div class="alcohol">
+                <div class="line1">
+                    <div class="bio-text">
+                        It's also a hobby of mine
+                        to find a nice bistro with friends
+                        in my free time
+                        to drink and chat
+                        until we're both slightly drunk.
+                    </div>
+                    <img src="images/bio11.png" alt="">
+
+                </div>
+                <div class="line2">
+                    <img src="images/bio10.png" alt="">
+                    <img src="images/bio12.png" alt="">
+                </div>
+                <table>
+                    <caption>
+                        My evaluation of different kinds of wine
+                    </caption>
+                    <thead>
+                        <tr>
+                            <td>Wine Type</td>
+                            <td>Comment</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fruit Wine</td>
+                            <td>Like!</td>
+                        </tr>
+                        <tr>
+                            <td>Beer</td>
+                            <td>Nooo</td>
+                        </tr>
+                        <tr>
+                            <td>Cocktail</td>
+                            <td>Love! !</td>
+                        </tr>
+                        <tr>
+                            <td>White Wine</td>
+                            <td>Never!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
