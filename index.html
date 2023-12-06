@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiii, Welcome to My World 🥳！！！</title>
+    <style>
+        /* import font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+        /* common style  */
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1 {
+             margin: 0;
+             padding: 0;
+         }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+        a {
+            text-decoration: none
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        header {
+            width: 100%;
+            height: 169px;
+            background: #48B8D0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .layout {
+            width: 1512px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            height: 104px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 104px;
+            color: #9F142D;
+            text-align: center;
+        }
+
+        ul.menu {
+            height: 65px;
+            display: flex;
+            background-color: #E8BABA;
+        }
+
+        ul.menu > li > a {
+            height: 65px;
+            width: 504px;
+            font-weight: 400;
+            font-size: 60px;
+            color: #EED6D6;
+            text-align: center;
+            line-height: 65px;
+            display: block;
+        }
+
+        ul.menu > li > a:hover,
+        ul.menu > li > a.active {
+            color: #36EA5D;
+            background: #4744EE;
+        }
+        /* page */
+        .content-home {
+            background: #CE4257;
+            margin-top: 169px;
+        }
+
+        .content-home > .container {
+            height: 1120px;
+            position: relative;
+        }
+
+        .content-home > .container > .cn-name {
+            position: absolute;
+            width: 424px;
+            height: 1060px;
+            left: 83px;
+            top: 57px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 300px;
+            line-height: 328px;
+            color: #FF9B54;
+        }
+
+        .content-home > .container > .en-name {
+            position: absolute;
+            width: 40px;
+            height: 922px;
+            left: 419px;
+            top: 126px;
+            word-break: break-all;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 90px;
+            line-height: 109px;
+            text-align: center;
+            color: #FF9B54;
+        }
+
+        .content-home > .container > .pinyin {
+            position: absolute;
+            width: 1029px;
+            height: 262px;
+            left: 405px;
+            bottom: 0;
+            font-weight: 400;
+            font-size: 200px;
+            color: #FF9B54;
+        }
+
+        .content-home > .container > img {
+            width: 950px;
+            height: auto;
+            position: absolute;
+            right: 0;
+            top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="layout">
+        <h1>Hiii, Welcome to My World 🥳！！！</h1>
+        <ul class="menu">
+            <li><a class="active" href="index.html">Me</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="summer.html">This Summer</a></li>
+        </ul>
+    </div>
+</header>
+<div class="content-home">
+    <div class="layout container">
+        <div class="cn-name">金琪睿</div>
+        <div class="en-name">CECILIA</div>
+        <div class="pinyin">QiruiJin</div>
+        <img src="images/my_picture.png" width="950px" height="1018px" alt="it's me 😊">
+    </div>
+</div>
+
+</body>
+</html>
